@@ -1,4 +1,8 @@
 {
+  "itn": {
+     "owner": "",
+     "witness":""
+  },
   "info": {
     "url_png_icon_64x64": "https://genkipool.com/img/extImg/ico_GenkiPool.png",
     "url_png_logo": "https://genkipool.com/img/extImg/Goku_GenkiPool_ext.png",
