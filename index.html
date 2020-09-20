@@ -44,13 +44,15 @@
 						<!-- secondary menu right link area -->
 						<div class="sm-right">
 							<!-- social link -->
-							<div class="sm-social-link">
+							<div class="sm_social_link">
 								<a class="h-twitter" href="https://twitter.com/GenkipoolC" target="_blank"><i class="fa fa-twitter"></i></a>
 								<a class="h-google" href="https://t.me/genkipool" target="_blank"><i class="fa fa-telegram"></i></a>
 								<a class="h-google" href="https://www.youtube.com/user/luisrb85" target="_blank"><i class="fa fa-youtube-play"></i></a>
 								<a class="h-facebook" href="https://www.facebook.com/genkipool.genki" target="_blank"><i class="fa fa-facebook-f"></i></a>
 								<a class="h-google" href="https://www.instagram.com/genkipool/" target="_blank"><i class="fa fa-instagram"></i></a>
 								<a class="h-google" href="https://github.com/genkipool/" target="_blank"><i class="fa fa-github"></i></a>
+								<a><select id="select"><option id="en" class="translate" value="English" selected="English">English</option><option  class="translate" value="Español"  id="es">Español</option></select></a>
+
 							</div>
 						</div>
 						<div class="clearfix"></div>
@@ -77,12 +79,13 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#dataGenkiPool">Data GenkiPool </a></li>
-								<li><a href="#rewardsGenkiPool">Rewards</a></li>
-								<li><a href="#DelegationGuide">Delegation Guide</a></li>
-								<li><a href="#Service">Service</a></li>
-								<li><a href="#Community">Community</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a class="lang" key="dataGenkiPool" href="#dataGenkiPool">Data GenkiPool </a></li>
+								<li><a class="lang" key="rewards" href="#rewardsGenkiPool">Rewards</a></li>
+								<li><a class="lang" key="guide" href="#DelegationGuide">Delegation Guide</a></li>
+								<li><a class="lang" key="service" href="#Service">Service</a></li>
+								<li><a class="lang" key="community" href="#Community">Community</a></li>
+								<li><a class="lang" key="contact" href="#contact">Contact</a></li>
+
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -105,7 +108,7 @@
 									<!-- paragraph -->
 									<h3 class="animated fadeInRightBig" style="color:black;">POOL ID: e7cc5cce7c9a06bc7310f8c222c702cd12d6fd05d5dee748f10e9218.</h3>
 									<!-- button -->
-									<a href="#dataGenkiPool" class="animated fadeIn btn btn-theme">More Info</a>
+									<a href="#dataGenkiPool"  key="info" class="animated fadeIn btn btn-theme lang" > More Info</a>
 								</div>
 							</div>
 						</div>
@@ -115,11 +118,11 @@
 								<!-- banner caption -->
 								<div class="carousel-caption slide-two">
 									<!-- heading -->
-									<h2 class="animated fadeInLeftBig" style="color:black;"><img src="img/logo/logo-ball-GenkiPool.webp" alt="" style="vertical-align:top;" /> Specifications.</h2>
-									<!-- paragraph -->
-									<h3 class="animated fadeInRightBig" style="color:black;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;His Power Is Over 9000!</h3>
+									<h2 class="animated fadeInLeftBig lang" key="Specifications" style="color:black;"><img src="img/logo/logo-ball-GenkiPool.webp" alt="" style="vertical-align:top;" /> Specifications.</h2>
+									<!-- paragraph --> 
+									<h3 class="animated fadeInRightBig lang" key="power" style="color:black;">His Power Is Over 9000!</h3>
 									<!-- button -->
-									<a href="#dataGenkiPool" class="animated fadeIn btn btn-theme">More Info</a>
+									<a href="#dataGenkiPool" class="animated fadeIn btn btn-theme lang" key="info">More Info</a>
 								</div>
 							</div>
 						</div>
@@ -131,9 +134,9 @@
 									<!-- heading -->
 									<h2 class="animated fadeInLeftBig" style="color:black;"><img src="img/logo/logo-daedalus-negro.webp" alt="" /> Daedalus.</h2>
 									<!-- paragraph -->
-									<h3 class="animated fadeInRightBig" style="color:black;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stake with Daedalus wallet.</h3>
+									<h3 class="animated fadeInRightBig lang" key='daedalus' style="color:black;">Delegate with Daedalus wallet.</h3>
 									<!-- button -->
-									<a href="https://daedaluswallet.io/en/download/#" target="_blank" class="animated fadeIn btn btn-theme">Download</a>
+									<a href="https://daedaluswallet.io/en/download/#" target="_blank" class="animated fadeIn btn btn-theme lang" key="download" >Download</a>
 								</div>
 							</div>
 						</div>
@@ -145,14 +148,13 @@
 									<!-- heading -->
 									<h2 class="animated fadeInLeftBig" style="color:black;"><img src="img/logo/Logo_Cardano_negro-80x80.webp" alt="" /> Cardano.</h2>
 									<!-- paragraph -->
-									<h3 class="animated fadeInRightBig" style="color:black;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardano Blockchain Explorer.</h3>
+									<h3 class="animated fadeInRightBig lang" key="blockchain" style="color:black;">Cardano Blockchain Explorer.</h3>
 									<!-- button -->
-									<a href="https://explorer.mainnet.cardano.org/en.html" target="_blank" class="animated fadeIn btn btn-theme">Exolorer</a>
+									<a href="https://explorer.mainnet.cardano.org/en.html" target="_blank" class="animated fadeIn btn btn-theme lang" key="explorer">Explorer</a>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					<!-- Controls -->
 					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 						<span class="fa fa-arrow-left" aria-hidden="true"></span>
@@ -173,10 +175,11 @@
 					<!-- hero content -->
 					<div class="hero-content ">
 						<!-- heading -->
-						<h2>Data GenkiPool</h2>
-						<hr>
+						<h2 class="lang" key="dataGenkiPool">Data GenkiPool</h2>
+						<hr id="separate">
 						<!-- paragraph -->
-						<p>Stake in  <strong class="theme-color">GenkiPool</strong>  to help Goku beat the  <strong class="theme-color">banking system</strong>.</p>
+						<p id="Pastake">Stake in  <strong class="theme-color">GenkiPool</strong>  to help Goku beat the  <strong class="theme-color">banking system</strong>.</p>
+						
 					</div>
 					<!-- hero play list-->
 					<div class="hero-playlist">
@@ -218,8 +221,8 @@
 									<hr>
 									<div style="border:2px solid #e1e5ea;border-radius: 10px;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;min-width:285px;">
 										<div>        
-											<div style="float:right;width:67%;border: none;text-align:left;padding:25px 0px;line-height:30px;">            
-												<span style="font-size: 18px; text-decoration: none; color: rgb(16, 112, 224);">SPECIFICATIONS (GENKI)</span> <br>                            
+											<div  style="float:right;width:67%;border: none;text-align:left;padding:25px 0px;line-height:30px;">            
+												<span  style="font-size: 18px; text-decoration: none; color: rgb(16, 112, 224);" class="lang" key="specifications" >SPECIFICATIONS (GENKI)</span> <br>                            
 											</div>        
 											<div style="text-align:center;padding:15px 0px;width:33%; text-decoration: none; color: rgb(16, 112, 224);"><img src="img/logo/logo-ball-GenkiPool.webp">
 											</div>    
@@ -228,7 +231,7 @@
 									 		<div style="text-align:center;float:left;width:33%;font-size:12px;padding:12px 0;border-right:1px solid #e1e5ea;line-height:1.25em;">OPERATING SYSTEM <br><br>
 									            <span style="font-size: 10px; ">64-bit Linux (i.e. Ubuntu 20.04 LTS)</span>              
 									        </div>                    
-									    <div style="text-align:center;float:left;width:33%;font-size:12px;padding:12px 0 16px 0;border-right:1px solid #e1e5ea;line-height:1.25em;">PROCESSOR<br><br>                       
+									    <div style="text-align:center;float:left;width:33%;font-size:12px;padding:12px 0 16px 0;border-right:1px solid #e1e5ea;line-height:1.25em;">CPU<br><br>                       
 									        <span style="font-size: 12px; ">Dual core CPU</span> 
 									    </div>                    
 									        <div style="text-align:center;float:left;width:33%;font-size:12px;padding:12px 0 16px 0;line-height:1.25em;">MEMORY<br><br>                        
@@ -274,14 +277,14 @@
 			<!--/ hero end -->
 			
 			<!-- promo -->
-			<div class="promo parallax-one pad" id="rewardsGenkiPool">>
+			<div class="promo parallax-one pad" id="rewardsGenkiPool">
 				<div class="container">
 					<!-- promo element -->
 					<div class="promo-element">
 						<!-- heading -->
-						<h3> Rewards With GenkiPool</h3>
+						<h3 class="lang" key="rewardG" id="titleReward" > Rewards With GenkiPool</h3>
 						<!-- paragraph -->
-						<p>Earn staking rewards in ADA crypto currency by downloading the Daedalus Mainnet staking wallet and choosing  <strong>GenkiPool</strong>  as your staking pool.</p>
+						<p id="PaReward" class="lang" key="home">Earn staking rewards in ADA crypto currency by downloading the Daedalus Mainnet or Yoroi staking wallet and choosing  <strong>GenkiPool</strong>  as your staking pool.</p>
 					</div>
 				</div>
 			</div>
@@ -293,7 +296,7 @@
 					<!-- default heading -->
 					<div class="default-heading">
 						<!-- heading -->
-						<h2>DELEGATION GUIDE</h2>
+						<h2 class="lang" key="guideD">DELEGATION GUIDE</h2>
 						
 					</div>
 					<div class="video-responsive">
@@ -309,13 +312,11 @@
 									<div class="figure">
 										<!-- image -->
 										<img class="img-responsive" src="img/delegation-guide/download_Daedalus.webp" alt="" />
-										<!-- paragraph -->
-										<p>Download Daedalus Wallet <a href="https://daedaluswallet.io/en/download/#" target="_blank" > Download</a></p>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
 										<!-- featured title -->
-										<h4>Download Daedalus</h4>
+										<h4><a class="lang guide" key="downloadD" href="https://daedaluswallet.io/en/download/#" >Download Daedalus</a></h4>
 										<!-- horizontal line -->
 										<hr />
 										<!-- some responce from social medial or web likes -->
@@ -329,13 +330,11 @@
 									<div class="figure">
 										<!-- image -->
 										<img class="img-responsive" src="img/delegation-guide/search_Stake_Pool.webp" alt="" />
-										<!-- paragraph -->
-										<p>Search  StakePool GENKI </a></p>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
 										<!-- featured title -->
-										<h4>Search GENKIPOOL</h4>
+										<h4 class="lang" key="search" >Search GENKIPOOL</h4>
 										<!-- horizontal line -->
 										<hr />
 										<!-- some responce from social medial or web likes -->
@@ -349,13 +348,11 @@
 									<div class="figure">
 										<!-- image -->
 										<img class="img-responsive" src="img/delegation-guide/select_stakePool.webp" alt="" />
-										<!-- paragraph -->
-										<p>Select StakePool GENKIPOOL to delegate.</p>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
 										<!-- featured title -->
-										<h4>Select GENKIPOOL</h4>
+										<h4 class="lang" key="selectG" >Select GENKIPOOL</h4>
 										<!-- horizontal line -->
 										<hr />
 									</div>
@@ -368,13 +365,11 @@
 									<div class="figure">
 										<!-- image -->
 										<img class="img-responsive" src="img/delegation-guide/select_wallet.webp" alt="" />
-										<!-- paragraph -->
-										<p>Select the wallet you want to delegate to GENKIPOOL.</p>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
 										<!-- featured title -->
-										<h4>Select Wallet</h4>
+										<h4 class="lang" key="selectW" >Select Wallet</h4>
 										<!-- horizontal line -->
 										<hr />
 									</div>
@@ -387,13 +382,11 @@
 									<div class="figure">
 										<!-- image -->
 										<img class="img-responsive" src="img/delegation-guide/check_stakePool.webp" alt="" />
-										<!-- paragraph -->
-										<p>Verify that you have selected stakepool GENKIPOOL.</p>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
 										<!-- featured title -->
-										<h4>Check GENKIPOOL</h4>
+										<h4 class="lang" key="checkG" >Check GENKIPOOL</h4>
 										<!-- horizontal line -->
 										<hr />
 									</div>
@@ -406,13 +399,11 @@
 									<div class="figure">
 										<!-- image -->
 										<img class="img-responsive" src="img/delegation-guide/enter_password.webp" alt="" />
-										<!-- paragraph -->
-										<p>Enter password and confirm.</p>
 									</div>
 									<!-- featured information -->
 									<div class="featured-item-info">
 										<!-- featured title -->
-										<h4>Enter Password</h4>
+										<h4 class="lang" key="enterP" >Enter Password</h4>
 										<!-- horizontal line -->
 										<hr />
 									</div>
@@ -428,18 +419,9 @@
 					<!-- news letter inner content -->
 					<div class="news-content ">
 						<!-- heading -->
-						<h3>SERVICE</h3>
+						<h3 class="lang" key="serviceD" >SERVICE</h3>
 						<!-- paragraph -->
-						<p>To create GENKIPOOL, 4 servers have been purchased, on the first server the prodcuctor node has been installed, on the second server 2 realys nodes have been installed, on the third server another 2 relay nodes have been installed, on the fourth one prometheus has been installed and grafana to be able to monitor 24 hours the operation of the producer node.
-
-						The servers have high availability and security 24 hours a day and have the following characteristics.
-
-						Operating system: 64-bit Linux (i.e. Ubuntu 20.04 LTS),
-						Processor: Dual core CPU,
-						Memory: 4GB RAM,
-						Storage: 40GB,
-						Internet: 24/7 broadband internet connection with speeds at least 500 Mbps,
-						Power: 24/7 electrical power.</p>
+						<p class="lang" key="textService" >To create GENKIPOOL, 4 servers have been configured, the producer node has been installed on the first server, 2 relay nodes have been installed on the second server, 2 other relay nodes have been installed on the third server, and prometheus has been installed on the fourth. and grafana to be able to monitor the operation of the producer node 24 hours a day.The servers have high availability and a high level of security 24 hours a day.Specs: Operating system: Linux 64-bit (Ubuntu 20.04 LTS), Processor: dual-core CPU, Memory: 4GB RAM Storage: 40 GB,Internet: 24/7 broadband Internet connection with speeds of at least 1Gbit, Energy: 24/7 electric power.</p>
 					</div>
 				</div>
 			</div>
@@ -450,9 +432,9 @@
 					<!-- default heading -->
 					<div class="default-heading">
 						<!-- heading -->
-						<h2>Community</h2>
-						<p style="font-size:20px; font-family:'Lato', sans-serif;">Join the community and help publicize GENKIPOOL by sharing your own images creating GENKIPOOL in social networks</p>
-						<p style="font-size:20px; font-family: 'Lato', sans-serif;">he best images will be published on the web and in social networks, together we will be stronger and we will get more rewards</p>
+						<h2 class="lang" key="community" >Community</h2>
+						<p class="lang" key="communityPa" style="font-size:20px; font-family:'Lato', sans-serif;">Join the community and help to publicize GENKIPOOL by sharing your own images and advertising GENKIPOOL on social networks,</p>
+						<p class="lang" key="communityPa2" style="font-size:20px; font-family: 'Lato', sans-serif;">the best images will be published on the web and on social networks, together we will be stronger and we will get more rewards.</p>
 
 					</div>
 				</div>
@@ -501,8 +483,8 @@
 					<!-- default heading -->
 					<div class="default-heading">
 						<!-- heading -->
-						<h2>Contact Me</h2>
-						<p style="font-size:20px; font-family:'Lato', sans-serif;"> Hi, my name is Luis, I have 7 years of experience as a network administrator and Network Security Assessment, I also have advanced knowledge in Linux and I know how to program in various languages, especially in bash and python. </p>
+						<h2 class="lang" key="contactMe">Contact Me</h2>
+						<p class="lang" key="perfil" style="font-size:20px; font-family:'Lato', sans-serif;"> Hi, my name is Luis, I have 7 years of experience as a network administrator and Network Security Assessment, I also have advanced knowledge in Linux and I know how to program in various languages, especially in bash and python. </p>
 					</div>
 					<div class="row">	
 						<div class="col-md-2 colsm-6">
@@ -563,6 +545,9 @@
 			
 		</div>
 		<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/language.js"></script>
+
 		<!-- Javascript files -->
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script> 
@@ -579,6 +564,8 @@
 		<!-- HTML5 Support for IE -->
 		<script src="js/html5shiv.js"></script>
 		<!-- Custom JS -->
+
 		<script src="js/custom.js"></script>
+		
 	</body>	
 </html>

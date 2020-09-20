@@ -2,6 +2,7 @@
 
 /* navigation menu animation with way points */
 
+
 $('.nav-animate').waypoint(function(direction) {
 	$('.secondary-menu').toggleClass('hide', direction === "down");
 	$('.navbar').toggleClass('comeup', direction === "down");
@@ -88,3 +89,82 @@ $(function(){
 	});
 
 });
+
+
+$.getJSON("js/lang.json", function(json){
+  //Lenguaje por defecto de la página sessionStorage.setItem("lang", "idioma")"
+  if(!localStorage.getItem("lang")){
+    localStorage.setItem("lang", "en");
+  }
+  var lang = localStorage.getItem("lang");
+  var doc = json;
+  $('.lang').each(function(index, element){
+    $(this).text(doc[lang][$(this).attr('key')]);
+  });//Each
+
+  $('.translate').click(function(){
+    localStorage.setItem("lang", $(this).attr('id')) ;
+    var lang = $(this).attr('id');
+    var doc = json;
+      $('.lang').each(function(index, element){
+        $(this).text(doc[lang][$(this).attr('key')]);
+      }); //Each
+  }); //Funcion click
+});//Get json AJAX
+
+if (typeof window.orientation !== 'undefined') {
+
+
+    var Li = document.createElement('li'); // Crea un elemento sctipt
+    var Link = document.createElement('a');
+    var Select = document.createElement('SELECT');
+    var Opt1 = document.createElement('OPTION');
+    var Opt2 = document.createElement('OPTION');
+
+    Li.appendChild(Link);
+    Link.appendChild(Select);
+    Select.appendChild(Opt1);
+    Select.appendChild(Opt2);
+
+
+    Select.setAttribute('id', 'select');
+    Opt1.setAttribute('class', 'lang');
+    Opt1.setAttribute('id', 'en');
+	Opt1.setAttribute('value', 'English');
+   	Opt1.setAttribute('selected', 'English');
+   	Opt2.setAttribute('class', 'lang');
+   	Opt2.setAttribute('id', 'es');
+   	Opt2.setAttribute('value', 'Español');
+
+	Opt1.appendChild( document.createTextNode( 'English' ));
+	Opt2.appendChild( document.createTextNode( 'Español' ));
+
+	var beforeElement = document.getElementsByTagName("li")[5]; 
+	var elementParent = beforeElement.parentNode;
+	elementParent.insertBefore(Li, beforeElement.nextSibling);
+
+	//var beforeElement = document.getElementById('recuerdame'); // Indica el luegar donde queremos añadir el elemento div
+	
+	
+	// Añade el elemento div
+	
+	//document.body.appendChild(li); // Añade el elemento script
+	//document.body.appendChild(link); // Añade el elemento script
+	//document.body.appendChild(opt1); // Añade el elemento script
+	//document.body.appendChild(opt2); // Añade el elemento script
+	
+
+	//var beforeElement = document.getElementsByTagName("a[href='#contact']"); // Indica el luegar donde queremos añadir el elemento div
+	//var elementParent = beforeElement.parentNode;
+	
+	// Añade el elemento div
+	//elementParent.insertBefore(opt1, beforeElement.nextSibling);
+	//elementParent.insertBefore(opt2, beforeElement.nextSibling);
+	//document.getElementsById('login').appendChild(addDiv);
+
+
+
+
+	//document.getElementById('select').appendChild(Li);
+
+}

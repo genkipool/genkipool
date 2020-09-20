@@ -141,7 +141,7 @@ hr{
 	color: #fff;
 }
 
-.secondary-menu .sm-social-link a {
+.secondary-menu .sm_social_link a {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
@@ -1281,4 +1281,28 @@ footer .copy-right {
     position: absolute;
     top: 0;
     width: 100%;
-    }
+ }
+
+
+
+
+select {
+    border: 0px solid #fff;
+    background-color: transparent;
+	appearance: none;
+
+
+}
+
+
+select option{
+background-color: #000000;
+
+}
+
+a.guide {
+    color: #000000;
+}
+
+
+
