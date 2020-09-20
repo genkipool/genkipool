@@ -132,7 +132,7 @@ if (typeof window.orientation !== 'undefined') {
     Opt1.setAttribute('id', 'en');
 	Opt1.setAttribute('value', 'English');
    	Opt1.setAttribute('selected', 'English');
-   	Opt2.setAttribute('class', 'lang');
+   	Opt2.setAttribute('class', 'translate');
    	Opt2.setAttribute('id', 'es');
    	Opt2.setAttribute('value', 'Español');
 
