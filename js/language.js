@@ -65,7 +65,7 @@ var arrLang = {
     // Process translation
 
 $(function() {
-     $('#select').on('change', function() {  
+     $(document).on('change', '#select', function() {  
      	var lang = $(this).children(":selected").attr("id");
         $('.lang').each(function(index, item) {
         	$(this).text(arrLang[lang][$(this).attr('key')]);
@@ -74,22 +74,24 @@ $(function() {
 	if(document.getElementById('Pastake')){
 		var element = document.getElementById("Pastake");
 		element.parentNode.removeChild(element);
-		var selectVal = $("#select option:selected").val();
+		var selectVal = $(this).children("option:selected").val();
 		var Pa = document.createElement('p');
-	var Strong = document.createElement('strong');
-			var Strong2 = document.createElement('strong');
+		var Strong = document.createElement('strong');
+		var Strong2 = document.createElement('strong');
 			
 	}
 		
 	if(document.getElementById('PaReward')){
 		var element = document.getElementById("PaReward");
 		element.parentNode.removeChild(element);
-		var selectVal = $("#select option:selected").val();
+		var selectVal = $(this).children("option:selected").val();
 		var PaR = document.createElement('p');
 		var StrongR = document.createElement('strong');
 			
 	}
+
 	if(selectVal == 'English'){
+		
 		var TextPa = document.createTextNode("Stake in ");
 		var TextStrong = document.createTextNode("GENKIPOOL ");
 		var TextPa2 = document.createTextNode("to help Goku beat the ");
@@ -99,7 +101,6 @@ $(function() {
 		var TextPaR3 = document.createTextNode("as your staking pool.");
 
 	} else {
-			
 		var TextPa = document.createTextNode("Delega en ");
 		var TextStrong = document.createTextNode("GENKIPOOL ");
 		var TextPa2 = document.createTextNode("para ayudar a Goku a vencer al ");
@@ -139,4 +140,15 @@ $(function() {
      });
 
 });
+
+
+
+
+
+
+
+
+
+
+
 
