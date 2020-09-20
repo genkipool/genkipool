@@ -4,24 +4,24 @@
 
 
 $('.nav-animate').waypoint(function(direction) {
-	$('.secondary-menu').toggleClass('hide', direction === "down");
-	$('.navbar').toggleClass('comeup', direction === "down");
+    $('.secondary-menu').toggleClass('hide', direction === "down");
+    $('.navbar').toggleClass('comeup', direction === "down");
 }, {
-	offset: '10%'
+    offset: '10%'
 });
 
 // Block scrolling
-	
+    
 $('.nav li a').bind('click', function(e){
-		var anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top
-		}, 1200);
-		if($(window).width() < 768){
-			var $navMain = $(".navbar-collapse");
-			$navMain.collapse('hide');
-		}
-		e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1200);
+        if($(window).width() < 768){
+            var $navMain = $(".navbar-collapse");
+            $navMain.collapse('hide');
+        }
+        e.preventDefault();
 });
 
  
@@ -37,23 +37,23 @@ $('.nav').onePageNav({
 });
 
 // Block scrolling
-	
+    
 $('.nav a').bind('click', function(e){
-		if($(window).width() < 768){
-			var $navMain = $(".navbar-collapse");
-			$navMain.collapse('hide');
-		}
-		e.preventDefault();
+        if($(window).width() < 768){
+            var $navMain = $(".navbar-collapse");
+            $navMain.collapse('hide');
+        }
+        e.preventDefault();
 });
 
 /* Owl-Carousel Client Slider */
  
 $(document).ready(function() {
   $("#portfolioOwl").owlCarousel({
-		autoPlay: 3000,
-		slideSpeed: 1200,
-	  paginationSpeed : 500,
-	  stopOnHover: true,
+        autoPlay: 3000,
+        slideSpeed: 1200,
+      paginationSpeed : 500,
+      stopOnHover: true,
     items : 4,
     itemsDesktop : [1199,4],
     itemsDesktopSmall : [991,3],
@@ -72,21 +72,21 @@ $(function () {
 
 $(".totop").hide();
 $(function(){
-	$(window).scroll(function(){
-		if ($(this).scrollTop()>300)
-		{
-			$('.totop').fadeIn();
-		} 
-		else
-		{
-			$('.totop').fadeOut();
-		}
-	});
+    $(window).scroll(function(){
+        if ($(this).scrollTop()>300)
+        {
+            $('.totop').fadeIn();
+        } 
+        else
+        {
+            $('.totop').fadeOut();
+        }
+    });
 
-	$('.totop a').click(function (e) {
-		e.preventDefault();
-		$('body,html').animate({scrollTop: 0}, 1200);
-	});
+    $('.totop a').click(function (e) {
+        e.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 1200);
+    });
 
 });
 
@@ -130,41 +130,17 @@ if (typeof window.orientation !== 'undefined') {
     Select.setAttribute('id', 'select');
     Opt1.setAttribute('class', 'translate');
     Opt1.setAttribute('id', 'en');
-	Opt1.setAttribute('value', 'English');
-   	Opt1.setAttribute('selected', 'English');
-   	Opt2.setAttribute('class', 'translate');
-   	Opt2.setAttribute('id', 'es');
-   	Opt2.setAttribute('value', 'Español');
+    Opt1.setAttribute('value', 'English');
+    Opt1.setAttribute('selected', 'English');
+    Opt2.setAttribute('class', 'translate');
+    Opt2.setAttribute('id', 'es');
+    Opt2.setAttribute('value', 'Español');
 
-	Opt1.appendChild( document.createTextNode( 'English' ));
-	Opt2.appendChild( document.createTextNode( 'Español' ));
+    Opt1.appendChild( document.createTextNode( 'English' ));
+    Opt2.appendChild( document.createTextNode( 'Español' ));
 
-	var beforeElement = document.getElementsByTagName("li")[5]; 
-	var elementParent = beforeElement.parentNode;
-	elementParent.insertBefore(Li, beforeElement.nextSibling);
-
-	//var beforeElement = document.getElementById('recuerdame'); // Indica el luegar donde queremos añadir el elemento div
-	
-	
-	// Añade el elemento div
-	
-	//document.body.appendChild(li); // Añade el elemento script
-	//document.body.appendChild(link); // Añade el elemento script
-	//document.body.appendChild(opt1); // Añade el elemento script
-	//document.body.appendChild(opt2); // Añade el elemento script
-	
-
-	//var beforeElement = document.getElementsByTagName("a[href='#contact']"); // Indica el luegar donde queremos añadir el elemento div
-	//var elementParent = beforeElement.parentNode;
-	
-	// Añade el elemento div
-	//elementParent.insertBefore(opt1, beforeElement.nextSibling);
-	//elementParent.insertBefore(opt2, beforeElement.nextSibling);
-	//document.getElementsById('login').appendChild(addDiv);
-
-
-
-
-	//document.getElementById('select').appendChild(Li);
+    var beforeElement = document.getElementsByTagName("li")[5]; 
+    var elementParent = beforeElement.parentNode;
+    elementParent.insertBefore(Li, beforeElement.nextSibling);
 
 }
