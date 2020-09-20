@@ -128,7 +128,7 @@ if (typeof window.orientation !== 'undefined') {
 
 
     Select.setAttribute('id', 'select');
-    Opt1.setAttribute('class', 'lang');
+    Opt1.setAttribute('class', 'translate');
     Opt1.setAttribute('id', 'en');
 	Opt1.setAttribute('value', 'English');
    	Opt1.setAttribute('selected', 'English');
