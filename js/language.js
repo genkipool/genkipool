@@ -63,14 +63,14 @@ var arrLang = {
 };
 
     // Process translation
+
 $(function() {
-     $('.translate').click(function() {
-        var lang = $(this).attr('id');
+     $('#select').on('change', function() {  
+     	var lang = $(this).children(":selected").attr("id");
         $('.lang').each(function(index, item) {
-          $(this).text(arrLang[lang][$(this).attr('key')]);
+        	$(this).text(arrLang[lang][$(this).attr('key')]);
         });
       
-
 	if(document.getElementById('Pastake')){
 		var element = document.getElementById("Pastake");
 		element.parentNode.removeChild(element);
