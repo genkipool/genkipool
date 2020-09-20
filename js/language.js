@@ -55,9 +55,10 @@ var arrLang = {
         'enterP': 'Introducir Password',
         'serviceD': 'SERVICIO',
         'textService': 'Para crear GENKIPOOL se han configurado 4 servidores, en el primer servidor se ha instalado el nodo prodcuctor, en el segundo servidor se han instalado 2 nodos relays, en el tercer servidor se han instalado otros 2 nodos relays, en el cuarto se ha instalado prometheus y grafana para poder monitorear las 24 horas el funcionamiento del nodo productor. Los servidores cuentan con alta disponibilidad y un alto nivel de seguridad las 24 horas del día. Especificaciones: Sistema operativo: Linux de 64 bits (Ubuntu 20.04 LTS), Procesador: CPU de doble núcleo, Memoria: 4 GB de RAM Almacenamiento: 40 GB, Internet: conexión a Internet de banda ancha 24/7 con velocidades de al menos 1Gbit, Energía: energía eléctrica 24/7.',
-         'communityPa': 'Únete a la comunidad y ayuda a dar a conocer a GENKIPOOL compartiendo tus propias imágenes y publicitando GENKIPOOL en las redes sociales, ',
+        'communityPa': 'Únete a la comunidad y ayuda a dar a conocer a GENKIPOOL compartiendo tus propias imágenes y publicitando GENKIPOOL en las redes sociales, ',
         'communityPa2': 'las mejores imágenes serán publicadas en la web y en las redes sociales, juntos seremos más fuertes y obtendremos más recompensas.',
-         'perfil': 'Hola, mi nombre es Luis, tengo 7 años de experiencia como administrador de redes y como auditor de seguridad de redes informaticas, también tengo conocimientos avanzados en Linux y sé programar en varios lenguajes, especialmente en bash y python.'
+        'contactMe': 'Contactame',
+        'perfil': 'Hola, mi nombre es Luis, tengo 7 años de experiencia como administrador de redes y como auditor de seguridad de redes informaticas, también tengo conocimientos avanzados en Linux y sé programar en varios lenguajes, especialmente en bash y python.'
         
       }
 };
