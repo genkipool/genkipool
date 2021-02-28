@@ -23,12 +23,11 @@ var arrLang = {
         'checkG': 'Check GENKIPOOL',
         'enterP': 'Enter Password',
         'serviceD': 'SERVICE',
-        'textService': 'To create GENKIPOOL, 4 servers have been configured, the producer node has been installed on the first server, 2 relay nodes have been installed on the second server, 2 other relay nodes have been installed on the third server, and prometheus has been installed on the fourth. and grafana to be able to monitor the operation of the producer node 24 hours a day.The servers have high availability and a high level of security 24 hours a day.Specs: Operating system: Linux 64-bit (Ubuntu 20.04 LTS), Processor: dual-core CPU, Memory: 4GB RAM Storage: 40 GB,Internet: 24/7 broadband Internet connection with speeds of at least 1Gbit, Energy: 24/7 electric power.',
+        'textService': 'The network infrastructure is made up of 7 servers, 4 relay servers, 2 pool nodes and 1 server for monitoring. The 4 relay nodes are in different locations for better redundancy, communication and speed in the propagation of blocks in the blockchain. 2 nodes are located in Nuremberg, 1 node in Falkenstein and 1 node in Tuusula. All nodes are monitored 24 hours a day with Grafana, Prometheus, Loki and with sending of alarms by Telegram. The second pool node is off and is only used when it is necessary to make an update in the main pool node, in this way the pool is working 24 hours and ready to sign blocks.',
         'communityPa': 'Join the community and help to publicize GENKIPOOL by sharing your own images and advertising GENKIPOOL on social networks, ',
         'communityPa2': 'the best images will be published on the web and on social networks, together we will be stronger and we will get more rewards.',
         'contactMe': 'Contact Me',
         'perfil': 'Hi, my name is Luis, I have 7 years of experience as a network administrator and Network Security Assessment, I also have advanced knowledge in Linux and I know how to program in various languages, especially in bash and python.'
-        
       },
       'es': {
         'dataGenkiPool': 'Datos GenkiPool',
@@ -54,7 +53,7 @@ var arrLang = {
         'checkG': 'Verificar GENKIPOOL',
         'enterP': 'Introducir Password',
         'serviceD': 'SERVICIO',
-        'textService': 'Para crear GENKIPOOL se han configurado 4 servidores, en el primer servidor se ha instalado el nodo prodcuctor, en el segundo servidor se han instalado 2 nodos relays, en el tercer servidor se han instalado otros 2 nodos relays, en el cuarto se ha instalado prometheus y grafana para poder monitorear las 24 horas el funcionamiento del nodo productor. Los servidores cuentan con alta disponibilidad y un alto nivel de seguridad las 24 horas del día. Especificaciones: Sistema operativo: Linux de 64 bits (Ubuntu 20.04 LTS), Procesador: CPU de doble núcleo, Memoria: 4 GB de RAM Almacenamiento: 40 GB, Internet: conexión a Internet de banda ancha 24/7 con velocidades de al menos 1Gbit, Energía: energía eléctrica 24/7.',
+        'textService': 'La infraestructura de red esta formada por 7 servidores, 4 Servidores relays, 2 nodos pool y 1 servidor para monitorización. Los 4 nodos relays se encuentran en distintas localizaciones para una mejor redundancia, comunicación y rapidez en la propagación de bloques en la blockchain. 2 nodos se encuentran ubicados en Nuremberg, 1 nodo en Falkenstein y 1 nodo en Tuusula. Todos los nodos son monitorizados 24 horas con Grafana, Prometheus, Loki y con envío de alarmas por Telegram. El segundo nodo pool se encuentra apagado y solo se utiliza cuando es necesario hacer una actualización en el nodo pool principal, de esta manera el pool esta 24 horas funcionado y listo para firmar bloques.',
         'communityPa': 'Únete a la comunidad y ayuda a dar a conocer a GENKIPOOL compartiendo tus propias imágenes y publicitando GENKIPOOL en las redes sociales, ',
         'communityPa2': 'las mejores imágenes serán publicadas en la web y en las redes sociales, juntos seremos más fuertes y obtendremos más recompensas.',
         'contactMe': 'Contactame',
