@@ -23,11 +23,12 @@ var arrLang = {
         'checkG': 'Check GENKIPOOL',
         'enterP': 'Enter Password',
         'serviceD': 'SERVICE',
+        'target': 'My goal with the validator is to achieve financial freedom and that of delegates if possible, also to get people to free themselves from banks, own their own money and have many more opportunities to obtain loans, aid and the possibility of moving your money anywhere in the world, all of that will give humanity much more freedom. By creating the validator, I think I am doing my bit to achieve that goal.',
         'textService': 'The network infrastructure is made up of 7 servers, 4 relay servers, 2 pool nodes and 1 server for monitoring. The 4 relay nodes are in different locations for better redundancy, communication and speed in the propagation of blocks in the blockchain. 2 nodes are located in Nuremberg, 1 node in Falkenstein and 1 node in Tuusula. All nodes are monitored 24 hours a day with Grafana, Prometheus, Loki and with sending of alarms by Telegram. The second pool node is off and is only used when it is necessary to make an update in the main pool node, in this way the pool is working 24 hours and ready to sign blocks.',
         'communityPa': 'Join the community and help to publicize GENKIPOOL by sharing your own images and advertising GENKIPOOL on social networks, ',
         'communityPa2': 'the best images will be published on the web and on social networks, together we will be stronger and we will get more rewards.',
         'contactMe': 'Contact Me',
-        'perfil': 'Hi, my name is Luis, I have 7 years of experience as a network administrator and Network Security Assessment, I also have advanced knowledge in Linux and I know how to program in various languages, especially in bash and python.'
+        'perfil': 'Hi, my name is Luis, I have 8 years of experience as a network administrator and Network Security Assessment, I also have advanced knowledge in Linux and I know how to program in various languages, especially in bash and python.'
       },
       'es': {
         'dataGenkiPool': 'Datos GenkiPool',
@@ -53,11 +54,12 @@ var arrLang = {
         'checkG': 'Verificar GENKIPOOL',
         'enterP': 'Introducir Password',
         'serviceD': 'SERVICIO',
+        'target': 'Mi objetivo con el validador es conseguir la libertad financiera y la de los delegantes si es posible, también conseguir que las personas se liberen de los bancos, sean dueños de su propio dinero y tengan muchas más oportunidades de obtener prestamos, ayudas y la posibilidad de mover su dinero a cualquier parte del mundo, todo eso le dará mucha más libertad a la humanidad. Creando el validador creo que pongo mi granito de arena a conseguir ese objetivo.',
         'textService': 'La infraestructura de red esta formada por 7 servidores, 4 Servidores relays, 2 nodos pool y 1 servidor para monitorización. Los 4 nodos relays se encuentran en distintas localizaciones para una mejor redundancia, comunicación y rapidez en la propagación de bloques en la blockchain. 2 nodos se encuentran ubicados en Nuremberg, 1 nodo en Falkenstein y 1 nodo en Tuusula. Todos los nodos son monitorizados 24 horas con Grafana, Prometheus, Loki y con envío de alarmas por Telegram. El segundo nodo pool se encuentra apagado y solo se utiliza cuando es necesario hacer una actualización en el nodo pool principal, de esta manera el pool esta 24 horas funcionado y listo para firmar bloques.',
         'communityPa': 'Únete a la comunidad y ayuda a dar a conocer a GENKIPOOL compartiendo tus propias imágenes y publicitando GENKIPOOL en las redes sociales, ',
         'communityPa2': 'las mejores imágenes serán publicadas en la web y en las redes sociales, juntos seremos más fuertes y obtendremos más recompensas.',
         'contactMe': 'Contactame',
-        'perfil': 'Hola, mi nombre es Luis, tengo 7 años de experiencia como administrador de redes y como auditor de seguridad de redes informaticas, también tengo conocimientos avanzados en Linux y sé programar en varios lenguajes, especialmente en bash y python.'
+        'perfil': 'Hola, mi nombre es Luis, tengo 8 años de experiencia como administrador de redes y como auditor de seguridad de redes informaticas, también tengo conocimientos avanzados en Linux y sé programar en varios lenguajes, especialmente en bash y python.'
         
       }
 };
